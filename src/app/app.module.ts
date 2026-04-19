@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { StudentsComponent } from './students/students.component';
 import { AddStudentComponent } from './add-student/add-student.component';
-import { StudentComponent } from './student/student.component';
+import { StudentDetailsComponent } from './student-details/student-details.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { StudentTableComponent } from './student-table/student-table.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { StudentComponent } from './student/student.component';
     HomeComponent,
     StudentsComponent,
     AddStudentComponent,
-    StudentComponent
+    StudentDetailsComponent,
+    NavbarComponent,
+    StudentTableComponent
   ],
   imports: [
     BrowserModule,
