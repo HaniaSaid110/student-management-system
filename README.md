@@ -22,7 +22,7 @@ If you want to run this project locally, simply follow these steps:
 
 1. **Clone the repository:**
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/HaniaSaid110/student-management-system.git
    ```
 2. **Navigate into the directory:**
    ```bash
@@ -34,7 +34,7 @@ If you want to run this project locally, simply follow these steps:
    ```
 4. **Run the development server:**
    ```bash
-   ng serve
+   ng serve -o
    ```
    *Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.*
 
