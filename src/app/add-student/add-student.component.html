@@ -1,1 +1,86 @@
-<p>add-student works!</p>
+<div class="container mt-4">
+  <h2>Add New Student</h2>
+
+  <!-- (ngSubmit) listens for the form submission and runs our TypeScript method -->
+  <form (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label class="form-label">First Name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="firstName"
+          [(ngModel)]="newStudent.firstName"
+          required
+        />
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label class="form-label">Last Name</label>
+        <input
+          type="text"
+          class="form-control"
+          name="lastName"
+          [(ngModel)]="newStudent.lastName"
+          required
+        />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <label class="form-label">Age</label>
+        <input
+          type="number"
+          class="form-control"
+          name="age"
+          [(ngModel)]="newStudent.age"
+        />
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <label class="form-label">Department</label>
+        <input
+          type="text"
+          class="form-control"
+          name="department"
+          [(ngModel)]="newStudent.department"
+        />
+      </div>
+
+      <div class="col-md-4 mb-3">
+        <label class="form-label">GPA</label>
+        <input
+          type="number"
+          class="form-control"
+          name="GPA"
+          [(ngModel)]="newStudent.GPA"
+        />
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label class="form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          name="email"
+          [(ngModel)]="newStudent.email"
+        />
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label class="form-label">Phone</label>
+        <input
+          type="text"
+          class="form-control"
+          name="phone"
+          [(ngModel)]="newStudent.phone"
+        />
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Save Student</button>
+  </form>
+</div>

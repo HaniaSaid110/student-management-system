@@ -9,6 +9,7 @@ import { AddStudentComponent } from './add-student/add-student.component';
 import { StudentDetailsComponent } from './student-details/student-details.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { StudentTableComponent } from './student-table/student-table.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -18,13 +19,10 @@ import { StudentTableComponent } from './student-table/student-table.component';
     AddStudentComponent,
     StudentDetailsComponent,
     NavbarComponent,
-    StudentTableComponent
+    StudentTableComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

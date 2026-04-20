@@ -1,1 +1,49 @@
-<p>student works!</p>
+<div class="container mt-5">
+  <div class="card" *ngIf="student">
+    <div class="card-header bg-primary text-white">
+      <h3>Student Details</h3>
+    </div>
+
+    <div class="card-body">
+      <h4 class="card-title">{{ student.firstName }} {{ student.lastName }}</h4>
+      <hr />
+      <div class="row">
+        <div class="col-md-6">
+          <p><strong>ID:</strong> {{ student.id }}</p>
+          <p><strong>Age:</strong> {{ student.age }}</p>
+          <p><strong>Gender:</strong> {{ student.gender }}</p>
+          <p><strong>Department:</strong> {{ student.department }}</p>
+          <p><strong>Level:</strong> {{ student.level }}</p>
+          <p><strong>GPA:</strong> {{ student.GPA }}</p>
+        </div>
+        <div class="col-md-6">
+          <p><strong>Email:</strong> {{ student.email }}</p>
+          <p><strong>Phone:</strong> {{ student.phone }}</p>
+          <p><strong>Address:</strong> {{ student.address }}</p>
+          <p>
+            <strong>City:</strong> {{ student.city }}, {{ student.country }}
+          </p>
+          <p><strong>Enrollment Date:</strong> {{ student.enrollmentDate }}</p>
+          <p>
+            <strong>Status:</strong>
+            <span
+              class="badge"
+              [class.bg-success]="student.isActive"
+              [class.bg-danger]="!student.isActive"
+            >
+              {{ student.isActive ? "Active" : "Inactive" }}
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <a class="btn btn-secondary mt-3" routerLink="/students">Back to List</a>
+    </div>
+  </div>
+
+  <div class="alert alert-danger" *ngIf="!student">
+    <h4>Student not found!</h4>
+    <p>We could not find a student with the ID: {{ userId }}</p>
+    <a class="btn btn-secondary" routerLink="/students">Back to List</a>
+  </div>
+</div>
