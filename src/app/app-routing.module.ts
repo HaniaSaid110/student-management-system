@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { StudentsComponent } from './students/students.component';
-import { AddStudentComponent } from './add-student/add-student.component';
-import { StudentDetailsComponent } from './student-details/student-details.component';
-import { HomeComponent } from './home/home.component';
+import { StudentsComponent } from './features/students/students.component';
+import { AddStudentComponent } from './features/add-student/add-student.component';
+import { StudentDetailsComponent } from './features/student-details/student-details.component';
+import { HomeComponent } from './features/home/home.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },

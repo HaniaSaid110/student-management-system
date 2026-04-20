@@ -41,7 +41,13 @@ export class StudentsService {
   }
 
   addStudent(student: Student): void {
-    this.studentsList = [...this.studentsList, student];
+    const nextId =
+      this.studentsList.length > 0
+        ? Math.max(...this.studentsList.map((s) => Number(s.id))) + 1
+        : 1;
+
+    const studentWithId = { ...student, id: nextId };
+    this.studentsList = [...this.studentsList, studentWithId];
     this.studentsSubject.next(this.studentsList);
   }
 

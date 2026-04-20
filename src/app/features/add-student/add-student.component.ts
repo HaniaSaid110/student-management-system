@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Student } from '../models/student';
-import { StudentsService } from '../services/students.service';
+import { Student } from '../../models/student';
+import { StudentsService } from '../../services/students.service';
 import { Router } from '@angular/router';
 
 @Component({
@@ -32,8 +32,6 @@ export class AddStudentComponent {
     private router: Router,
   ) {}
   onSubmit() {
-    this.newStudent.id = Math.floor(Math.random() * 1000);
-
     this.studentService.addStudent(this.newStudent);
 
     this.router.navigate(['/students']);

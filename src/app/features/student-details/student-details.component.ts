@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Student } from '../models/student';
-import { StudentsService } from '../services/students.service';
+import { Student } from '../../models/student';
+import { StudentsService } from '../../services/students.service';
 
 @Component({
   selector: 'app-student-details',
