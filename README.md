@@ -1,27 +1,46 @@
-# StudentManagementSystem
+# 🎓 Student Management System
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+A beginner-friendly web application built with **Angular** to manage student records efficiently.
 
-## Development server
+## 🚀 Live Demo
+You can view the live application here:
+**[Student Management System - Live on GitHub Pages](https://haniasaid110.github.io/student-management-system/home)**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## ✨ Features
+- View list of all students
+- Add new students to the system
+- View details of individual students
+- Modern and responsive user interface
 
-## Code scaffolding
+## 🛠️ Technology Stack
+- **Framework**: Angular 16 
+- **Styling**: Bootstrap / FontAwesome / Custom CSS
+- **Deployment**: GitHub Pages
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## 💻 Local Development Setup
+If you want to run this project locally, simply follow these steps:
 
-## Build
+1. **Clone the repository:**
+   ```bash
+   git clone <your-repository-url>
+   ```
+2. **Navigate into the directory:**
+   ```bash
+   cd student-management-system
+   ```
+3. **Install the dependencies:**
+   ```bash
+   npm install
+   ```
+4. **Run the development server:**
+   ```bash
+   ng serve
+   ```
+   *Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.*
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## 🔨 Build & Deploy
+This project uses `angular-cli-ghpages` to deploy directly to GitHub pages.
+```bash
+ng build --base-href /student-management-system/
+npx angular-cli-ghpages --dir=dist/student-management-system
+```
